@@ -1,29 +1,16 @@
 
 import React from 'react';
+// import './Classcomponent/Login.css'
 
-function Lunch({ menu }) {
+function Component2({ menu }) {
   // Dummy image URLs for menu items
   const menuImages = [
-    './img/Frice.jpg',
-   './img/chapati.jpg',
-   './img/colorRice.jpg',
-   './img/pallav.jpg',
-   './img/pallav2.jpg',
-   './img/pallav3.jpg',
-   './img/rice.jpg',
-   './img/riceAndsam.jpg',
-   './img/roti.jpg',
-   './img/rice2.heic',
-     
-   
-   // '/Images/burger.jpeg', 
-   // '/Images/sandwich.jpeg',
-   // '/Images/salad.jpeg', 
-     ];
+    '/Images/burger.jpeg', 
+    '/Images/sandwich.jpeg',
+    '/Images/salad.jpeg', 
+  ];
 
   return (
-    <>
-   
     <div className="menu-container">
       <h2>Lunch Menu</h2>
       <div className="card-container">
@@ -35,9 +22,7 @@ function Lunch({ menu }) {
         ))}
       </div>
     </div>
-    </>
   );
 }
 
-export default Lunch;
-    
+export default Component2;

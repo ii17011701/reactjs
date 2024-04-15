@@ -1,122 +1,35 @@
-//import './App.css'; 
-import idli from './img/idli.jpg';
-import dosa from './img/dosa.jpg';
-import paddu from './img/paddu.jpg';
-import puri from './img/puri.jpg';
-import uppma from './img/uppma.jpg';
-import Frice from './img/Frice.jpg';
-import chapati from './img/chapati.jpg';
-import colorRice from './img/colorRice.jpg';
-import pallav from './img/pallav.jpg';
-import pallav2 from './img/pallav2.jpg';
-import pallav3 from './img/pallav3.jpg';
-import rice from './img/rice.jpg';
-import riceAndsam from './img/riceAndsam.jpg';
-import roti from './img/roti.jpg';
-import rice2 from './img/rice2.heic';
-function All() { 
-return ( 
-<>
-<div className="container-fluid">
-    <div className="row">
-      <div className="col-sm-2">
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Breakfast from './Breakfast';
+import Dinner from './Dinner';
+import Lunch from './Lunch';
 
-    {/*------idli-------- */}
-      <div class="card" style={{width: "13rem"}}>
-  <img src={idli} className="card-img-top rounded" alt="..." />
-  </div></div>
+// import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={dosa} className="card-img-top rounded" alt="..." />
-  </div></div>
+function All({ lunchMenu, dinnerMenu, breakfastMenu }) { 
+  return (
+    
+       <div>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="container-fluid">
+      <a className="navbar-brand" href="#click-All">Cards</a>
+       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <Link to="/" class="nav-link active" aria-current="page" href="#">All</Link>
+          <Link to="/breakfast" class="nav-link" href="#">Breakfast</Link>
+          <Link to="/lunch" class="nav-link" href="#">Lunch</Link>
+          <Link to="/dinner" class="nav-link" href="#">Dinner</Link>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={paddu} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={puri} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={uppma} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={Frice} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  </div></div>
-
-
-  <div className="container-fluid">
-    <div className="row">
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={chapati} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={roti} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={colorRice} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={pallav} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={pallav2} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={pallav3} className="card-img-top rounded" alt="..." />
-  </div></div></div></div>
-
-  <div className="container-fluid">
-    <div className="row">
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={riceAndsam} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={rice} className="card-img-top rounded" alt="..." />
-  </div></div>
-
-  <div className="col-sm-2">
-  <div class="card" style={{width: "13rem"}}>
-  <img src={rice2} className="card-img-top rounded" alt="..." />
-  </div></div></div></div>
-
-  
-
-
-
-        
-        
-      
-
-
-
-</>
-);
+  <Breakfast menu={breakfastMenu} />
+  <Lunch menu={lunchMenu} />
+  <Dinner menu={dinnerMenu} />
+  </div>
+    );
 }
 
 export default All;
