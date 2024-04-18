@@ -4,8 +4,9 @@ import All from './component/All';
 import Breakfast from './component/Breakfast';
 import Dinner from './component/Dinner';
 import Lunch from './component/Lunch';
-
-
+import './component/hi.css';
+import Bar from './component/Bar';
+import Login from './component/Login';
 function App(){
   
   const breakfastMenu = ['idli', 'dosa', 'paddu','puri','uppma'];
@@ -15,15 +16,15 @@ function App(){
   return (
     <>
  <BrowserRouter>
-    
+    <Bar />
         <Routes>
           <Route path="/" element={<All breakfastMenu={breakfastMenu} lunchMenu={lunchMenu} dinnerMenu={dinnerMenu} />} />
 
-          <Route path="/break" element={<Breakfast menu={breakfastMenu} />} />
+          <Route path="/breakfast" element={<Breakfast menu={breakfastMenu} />} />
 
           <Route path="/lunch" element={<Lunch menu={lunchMenu} />} />
           <Route path="/dinner" element={<Dinner menu={dinnerMenu} />} />
-
+          <Route path="/login" element={<Login menu={Login} />} />
         </Routes>
       
     </BrowserRouter>

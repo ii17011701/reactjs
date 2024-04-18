@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './hi.css';
+
 function Lunch({ menu }) {
   // Dummy image URLs for menu items
   const menuImages = [
@@ -29,10 +29,8 @@ function Lunch({ menu }) {
       <div className="card-container">
         {menu.map((item, index) => (
           <div key={index} className="card">
- <div class="card" style={{width: '18rem'}}>
-          <img src={menuImages[index]} alt={item} />
-  </div>      
-        <div className="card-content">{item}</div>
+            <img src={menuImages[index]} alt={item} />
+            <div className="card-content">{item}</div>
           </div>
         ))}
       </div>

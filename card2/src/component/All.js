@@ -1,17 +1,17 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Breakfast from './Breakfast';
 import Dinner from './Dinner';
 import Lunch from './Lunch';
-import './hi.css';
+
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import '/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function All({ breakfastMenu, lunchMenu, dinnerMenu }) { 
+function All({ lunchMenu, dinnerMenu, breakfastMenu }) { 
   return (
     
        <div>
-        {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
       <a className="navbar-brand" href="#click-All">Cards</a>
        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -23,7 +23,7 @@ function All({ breakfastMenu, lunchMenu, dinnerMenu }) {
         </div>
       </div>
     </div>
-  </nav> */}
+  </nav>
 
   <Breakfast menu={breakfastMenu} />
   <Lunch menu={lunchMenu} />
