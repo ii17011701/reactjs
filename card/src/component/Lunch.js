@@ -24,19 +24,26 @@ function Lunch({ menu }) {
   return (
     <>
    
-    <div className="menu-container">
+   <div>
       <h2>Lunch Menu</h2>
-      <div className="card-container">
+      <div className="container">
+          <div className="row">
+   
         {menu.map((item, index) => (
-          <div key={index} className="card">
- <div class="card" style={{width: '18rem'}}>
-          <img src={menuImages[index]} alt={item} />
-  </div>      
-        <div className="card-content">{item}</div>
+          <div key={index} className="col-sm-3">
+ <div className="card" style={{width: '13rem'}}>
+          <img src={menuImages[index]} alt={item} className='card-img-top' />
+  <div className='card-body'>
+        <h5 className="card-title"><center>{item}</center></h5>
+        </div>
+          </div> 
           </div>
+         
         ))}
-      </div>
+        </div>
+        </div>
     </div>
+   
     </>
   );
 }

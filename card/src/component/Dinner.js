@@ -21,20 +21,23 @@ function Dinner({ menu }) {
 
   return (
     <>
-
-    <div className="menu-container">
-      <h2>Dinner Menu</h2>
-      <div className="card-container">
-        {menu.map((item, index) => (
-          <div key={index} className="card">
-            <div class="card" style={{width: '18rem'}}>
-          <img src={menuImages[index]} alt={item} />
-  </div>  
-            <div className="card-content">{item}</div>
+      <div>
+        <h2>Dinner Menu</h2>
+        <div className="container">
+          <div className="row">
+            {menu.map((item, index) => (
+              <div key={index} className="col-sm-3">
+                <div className="card" style={{ width: '13rem' }}>
+                  <img src={menuImages[index]} alt={item} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title"><center>{item}</center></h5>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
     </>
   );
 }
