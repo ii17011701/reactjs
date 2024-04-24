@@ -1,0 +1,76 @@
+/* Container for the todo list */
+.todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Input field for adding new todos */
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Individual todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Checkbox for completing todos */
+.todo-checkbox {
+  margin-right: 10px;
+}
+
+/* Text of the todo item */
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+/* Button to delete a todo item */
+.delete-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Button to edit a todo item */
+.edit-button {
+  background-color: #6bd4ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #4dbdff;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+}
