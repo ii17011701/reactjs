@@ -1,0 +1,8 @@
+nav, ul, li{
+    display: inline;
+}
+
+img {
+    height: auto;
+    /* width: 12rem; */
+}

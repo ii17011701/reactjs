@@ -1,0 +1,161 @@
+/* main content */
+
+.banner img{
+    width: 100%;
+    height: 30rem;
+}
+
+/* con-img */
+.con-img img{
+    /* display:flex; */
+    /* justify-content: center; */
+     /* align-items: center; */
+    width: 60rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 3rem; */
+}
+
+
+/* our-service */
+.our-service {
+    text-decoration: underline;
+    text-decoration-color: #F12F37;
+    text-decoration-thickness: 2px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+     /* align-items: center; */
+     
+}
+.ourtxt {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     
+}
+.ourtxt p{
+    text-align: start;
+}
+
+.ourimg1, .ourimg2, .ourimg3 {
+    height: 4rem; 
+    width: 4rem; 
+    margin-top: 1rem;
+  
+}
+
+
+
+/* our histroy */
+
+.our-histroy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    /* width: 25rem; */
+    
+}
+.our-histroy h5 {
+ /* border-bottom: 3px solid #EC3233; */
+ text-decoration: underline;
+ text-decoration-color: #EC3233;
+ text-decoration-thickness: 2px; 
+}
+
+.our-histroy p {
+     margin: 0.4rem 0;
+     text-align: justify;
+}
+.our-histroy small{
+  text-align: justify;
+}
+.our-histroy-bg {
+ background-color: #F6F6F6;
+ /* width: 102.3%; */
+ /* height: 100vh; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ 
+}
+
+.our-history-but {
+ background-color: #EC3233;
+ color: white;
+ margin: 1rem 0;
+ width: 6rem;
+ padding: 0.4rem 1.8rem;
+ font-weight: 500;
+ text-align: center;
+}
+
+.our-histroy-img img {
+ width: 100%;
+ /* height: 400rem; */
+ height: auto;
+ 
+}
+
+
+/*! our-project */
+
+.our-project {
+   margin: 1rem 0;
+   display:flex;
+   justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+
+
+.our-project-head {
+    text-decoration: underline;
+    text-decoration-color: #F12F37;
+    text-decoration-thickness: 2px;
+    margin: 2rem 0;
+    display:flex;
+    justify-content: center;
+     align-items: center;
+}
+
+
+
+
+/*! contect-us */
+.contect-us {
+    display:flex;
+    justify-content: center;
+     align-items: center;
+     background-color: #DBDEE5;
+     color: #676565;
+     /* width: 100%; */
+     margin: 1rem 0;
+     
+
+}
+
+.contect-us-right {
+    display:flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     
+     
+}
+
+.contect-us-right p {
+     color: white;
+     background-color: #8D8E90;
+     border: 1px solid black;
+     height: 2rem;
+     text-align: center;
+     width: 6rem;
+     border-radius: 3px;
+     cursor: pointer;
+}

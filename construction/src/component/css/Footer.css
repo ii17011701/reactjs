@@ -1,0 +1,25 @@
+
+/* !footer */
+
+.footer {
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-evenly;
+     align-items: center;
+}
+
+.footerimg img{
+    display:flex;
+    justify-content: center;
+     align-items: center;
+}
+
+/* coptright */
+.coptright {
+    background-color: #F12F37;
+    color: white;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+     /* align-items: center; */
+}

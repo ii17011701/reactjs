@@ -1,0 +1,47 @@
+.h1{
+    color: red;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust this according to your preference */
+  }
+  
+  .card {
+    width: 200px; /* Adjust card width according to your preference */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  /* CSS file */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
