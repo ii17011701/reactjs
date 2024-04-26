@@ -35,8 +35,8 @@ function Bar02() {
 
 
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#hi">Navbar</a>
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a className="navbar-brand" href="#hi">Navbar</a>   
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <small className="navbar-toggler-icon"></small>
   </button>
@@ -52,26 +52,30 @@ function Bar02() {
       <Link to="/todo" className="nav-link">Todo</Link>
       </li>
 
-      <li class="nav-item">
+      <li className="nav-item">
       <Link to="/quiz" className="nav-link">Quiz</Link>
       </li>
 
-      <li class="nav-item">
-      <Link to="/module" className="nav-link">Module</Link>
+      <li className="nav-item">
+      <Link to="/parent" className="nav-link">ParentComponent</Link>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#hi" role="button" data-toggle="dropdown" aria-expanded="false">
-          Dropdown
+
+      <li className="nav-item dropdown">
+        <a className="nav-link dropdown-toggle" href="#hi" role="button" data-toggle="dropdown" aria-expanded="false">
+          Timer
         </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#hi">Action</a>
-          <a class="dropdown-item" href="#hi">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#hi">Something else here</a>
+        <div className="dropdown-menu">
+        <Link to="/timer" className="dropdown-item">Timer</Link>
+        <Link to="/timer-two" className="dropdown-item">Timer2</Link>
+          <div className="dropdown-divider"></div>
+          <a className="dropdown-item" href="#hi">Something else here</a>
         </div>
       </li>
 
+      <li className="nav-item">
+      <Link to="/tictactoe" className="nav-link">TicTacToe</Link>
+      </li>
 
 
       

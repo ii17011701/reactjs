@@ -1,19 +1,22 @@
-// import ClassComponent from "./Component/ClassComponent"; 
-  // import  CounterApp from './Component/CounterApp';
+
   import React from 'react';
   import { BrowserRouter,Routes,Route } from 'react-router-dom';
   import Bar02 from './Component/Bar02';
   import Todo from './Component/Todo';
 import Quiz from './Component/Quiz';
 import Home from './Component/Home';
-import Module from './Hooks/useEffect/Module';
+// import Module from './Hooks/useEffect/Module';
+import ParentComponent from './Hooks/useEffect/ParentComponent';
+import './Hooks/useEffect/ParentComponent.css';
+import Timer from './Hooks/useEffect/Timer';
+import TimerTwo from './Hooks/useEffect/TimerTwo';
+// import useTictacToe from './Hooks/useReducer/useTicTacToe';
+import TicTacToe from './Hooks/useReducer/TicTacToe';
 
-// import FunctionalComponent from "./Component/FunctionalComponent";
-// import '/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css';
-// import ParentComponenet from './Component/ParentComponent';
-// import './ParentComponent';
-// import Main from "./Main";
-// import slider2 from './slider2.png';
+
+
+
+
 function hello() {
   return (
     <>
@@ -27,8 +30,13 @@ function hello() {
 
           <Route path="/quiz" exact Component={Quiz} />
 
-          <Route path="/module" exact Component={Module} />
-         
+          <Route path="/parent" exact Component={ParentComponent} />
+
+          <Route path="/timer" exact Component={Timer} />
+
+          <Route path="/timer-two" exact Component={TimerTwo} />
+          {/* <TicTacToe boardSize={4} /> */}
+          <Route path="/tictactoe" exact Component={TicTacToe} />
         </Routes>
       
     </BrowserRouter>
@@ -39,3 +47,22 @@ function hello() {
 }
 
 export default hello;
+
+
+
+
+// import React from 'react';
+// import ParentComponent from './Hooks/useEffect/ParentComponent';
+// import './Hooks/useEffect/ParentComponent.css';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Modal Example</h1>
+//       <ParentComponent />
+//     </div>
+//   );
+// }
+
+// export default App;
+
