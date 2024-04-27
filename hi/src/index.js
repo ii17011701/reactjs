@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import useStateOne from './Hooks/useState/useStateOne';
+// import Op from './Op';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <useStateOne /> */}
+    {/* <Op /> */}
   </React.StrictMode>
 );
 

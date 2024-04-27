@@ -77,6 +77,10 @@ function Bar02() {
       <Link to="/tictactoe" className="nav-link">TicTacToe</Link>
       </li>
 
+      {/* <li className="nav-item">
+      <Link to="/op" className="nav-link">Op</Link>
+      </li> */}
+
 
       
     </ul>
