@@ -1,0 +1,93 @@
+
+
+.timer-container {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+  }
+  
+  .timer-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .timer-text {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .timer-buttons {
+    margin-top: 20px;
+  }
+  
+  .start-button,
+  .stop-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .start-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+  .stop-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .stop-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  } 
+
+
+
+  
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #2196f3;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  .reset-button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .reset-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+
+
+
+
+
+
+  
