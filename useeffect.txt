@@ -1,0 +1,7 @@
+a componet with the external system. : useeffect is a hooks
+connecting to an external system
+controlling the widget
+fecting data with reactjs
+wraping effects in custom Hook
+remove a unessary, and dependence
+reading the leate pros and sate from Hooks
