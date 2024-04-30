@@ -1,5 +1,4 @@
 
-
   import React from 'react';
   import { BrowserRouter,Routes,Route } from 'react-router-dom';
   import Bar02 from './Component/Bar02';
@@ -13,7 +12,7 @@ import Timer from './Hooks/useEffect/Timer';
 import TimerTwo from './Hooks/useEffect/TimerTwo';
 // import useTictacToe from './Hooks/useReducer/useTicTacToe';
 import TicTacToe from './Hooks/useReducer/TicTacToe';
-// import Op from './Op';
+import Login from './Hooks/UseRefer/Login';
 
 
 
@@ -45,7 +44,9 @@ function hello() {
           {/* <TicTacToe boardSize={4} /> */}
           <Route path="/tictactoe" exact Component={TicTacToe} />
 
-          {/* <Route path="/op" exact Component={Op} /> */}
+          <Route path="/refer" exact Component={Login} />
+
+          <Route path="https://portfolio1701.netlify.app/" />
         </Routes>
     </BrowserRouter>
    
@@ -63,17 +64,18 @@ export default hello;
 
 
 
+// import React from 'react';
+// import ParentComponent from './Hooks/useEffect/ParentComponent';
+// import './Hooks/useEffect/ParentComponent.css';
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Modal Example</h1>
+//       <ParentComponent />
+//     </div>
+//   );
+// }
 
-
-
-
-
-
-
-
-
-
-
-
+// export default App;
 

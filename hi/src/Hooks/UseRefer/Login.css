@@ -1,0 +1,43 @@
+.main {
+    /* background-color: whitesmoke; */
+    /* width: 50rem; */
+    /* height: 300px; */
+    display:flex;
+    justify-content: center;
+    min-height: 80vh;
+     align-items: center;
+    
+
+  }
+
+.formcen {
+     background-color: white;
+    width:400px;
+    /* margin-left: 15rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* height:200px; */
+}
+
+.formcen1 {
+    /* width: 300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.formcen2 {
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* Login.css */
+.input-error {
+    border-color: red !important; /* Set the border color to red */
+  }
+    

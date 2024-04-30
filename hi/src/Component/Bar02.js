@@ -77,9 +77,14 @@ function Bar02() {
       <Link to="/tictactoe" className="nav-link">TicTacToe</Link>
       </li>
 
-      {/* <li className="nav-item">
-      <Link to="/op" className="nav-link">Op</Link>
-      </li> */}
+      <li className="nav-item">
+      <Link to="/refer" className="nav-link">Refer</Link>
+      </li>
+
+      <li className="nav-item">
+      <Link to="https://portfolio1701.netlify.app/" className="nav-link">Portfolio</Link>
+      </li>
+
 
 
       
