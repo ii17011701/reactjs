@@ -85,7 +85,9 @@ function Bar02() {
       <Link to="https://portfolio1701.netlify.app/" className="nav-link">Portfolio</Link>
       </li>
 
-
+      <li className="nav-item">
+      <Link to="/toggle" className="nav-link">Toogle</Link>
+      </li>
 
       
     </ul>

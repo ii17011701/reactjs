@@ -13,7 +13,7 @@ import TimerTwo from './Hooks/useEffect/TimerTwo';
 // import useTictacToe from './Hooks/useReducer/useTicTacToe';
 import TicTacToe from './Hooks/useReducer/TicTacToe';
 import Login from './Hooks/UseRefer/Login';
-
+import Op from './Op';
 
 
 
@@ -47,6 +47,8 @@ function hello() {
           <Route path="/refer" exact Component={Login} />
 
           <Route path="https://portfolio1701.netlify.app/" />
+
+          <Route path="/toggle" exact Component={Op} />
         </Routes>
     </BrowserRouter>
    
