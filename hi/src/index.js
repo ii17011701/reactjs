@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Input from './Hooks/useCallback/formInput';
 // import useStateOne from './Hooks/useState/useStateOne';
 // import Op from './Op';
 
@@ -12,6 +13,7 @@ root.render(
     <App />
     {/* <Op /> */}
     {/* <useStateOne /> */}
+{/* <Input /> */}
   </React.StrictMode>
 );
 
