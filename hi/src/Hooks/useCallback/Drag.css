@@ -1,0 +1,32 @@
+.draggable-button {
+    position: absolute;
+    cursor: grab;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  .draggable-button:active {
+    cursor: grabbing;
+  }
+  
+  .draggable-button:hover {
+    background-color: #0056b3;
+  }
+  
+.draggable-div {
+    border: 2px dashed #aaa; /* Example border */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px; /* Example padding */
+    width: 300px; /* Example width */
+    height: 200px; /* Example height */
+    position: relative;
+    /* display:flex;
+    justify-content: center;
+     align-items: center; */
+  }
+  
