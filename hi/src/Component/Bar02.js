@@ -89,6 +89,10 @@ function Bar02() {
       <Link to="/toggle" className="nav-link">Toogle</Link>
       </li>
 
+      <li className="nav-item">
+      <Link to="/drag" className="nav-link">Drag</Link>
+      </li>
+
       
     </ul>
   </div>

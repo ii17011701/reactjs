@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Input from './Hooks/useCallback/Drag';
+// import Input from './Hooks/useCallback/Drag';
 // import useStateOne from './Hooks/useState/useStateOne';
 // import Op from './Op';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <Op /> */}
     {/* <useStateOne /> */}
-<Input />
+{/* <Input /> */}
   </React.StrictMode>
 );
 
