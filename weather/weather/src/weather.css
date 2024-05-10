@@ -1,0 +1,78 @@
+/* Style for the form */
+@font-face {
+    font-family: 'vivek\'s';
+    src: url('./vivek\'s.ttf') format('truetype');
+  }
+
+
+
+body{
+    display:flex;
+    justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+
+     font-family: 'vivek\'s', Arial, sans-serif; 
+     background-image: url('./sky-6804245_1280.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+}
+form {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the input field */
+  input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'vivek\'s', Arial, sans-serif; 
+  }
+  
+  /* Style for the submit button */
+  button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'vivek\'s', Arial, sans-serif; 
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    font-family: 'vivek\'s', Arial, sans-serif; 
+  }
+  
+  /* Style for the weather data display */
+  h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'vivek\'s', Arial, sans-serif; 
+  }
+  
+  p {
+    margin: 5px 0;
+    font-family: 'vivek\'s', Arial, sans-serif; 
+  }
+
+  .new {
+    width: 22rem;
+    height: 7rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 25px;
+    /* padding-left:  30px; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     font-family: 'vivek\'s', Arial, sans-serif; 
+
+  }
+  
