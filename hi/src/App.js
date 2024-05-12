@@ -13,7 +13,8 @@ import TimerTwo from './Hooks/useEffect/TimerTwo';
 // import useTictacToe from './Hooks/useReducer/useTicTacToe';
 import TicTacToe from './Hooks/useReducer/TicTacToe';
 import Login from './Hooks/UseRefer/Login';
-import Op from './Op';
+// import Op from './Op';
+import Toggle from './Hooks/useContext/Toggle';
 import Drag from './Hooks/useCallback/Drag';
 
 
@@ -49,7 +50,7 @@ function hello() {
 
           <Route path="https://portfolio1701.netlify.app/" />
 
-          <Route path="/toggle" exact Component={Op} />
+          <Route path="/toggle" exact Component={Toggle} />
 
           <Route path="/drag" exact Component={Drag} />
         </Routes>

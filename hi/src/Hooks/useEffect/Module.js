@@ -33,24 +33,56 @@
 
 
 // Modal.js
-import React from 'react';
+// import React from 'react';
 
-const Modal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
+// const Modal = ({ isOpen, onClose, children }) => {
+//   if (!isOpen) return null;
+
+//   return (
+//     <div className="modal-overlay">
+//       <div className="modal">
+//         <button className="close-btn" onClick={onClose}>Close</button>
+//         <div className="modal-content">
+//           {children}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Modal;
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import './Module.css';
+
+function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    setShowModal(true);
+    return () => {
+      setShowModal(false);
+    };
+  }, []);
 
   return (
-    <div className="modal-overlay">
-      <div className="modal">
-        <button className="close-btn" onClick={onClose}>Close</button>
-        <div className="modal-content">
-          {children}
-        </div>
-      </div>
+    <>
+     <div className={`modal ${showModal ? 'show' : 'hide'}`}>
+       <div className="modal-content">
+         <span className="close" onClick={() => setShowModal(false)}>&times;</span>
+        <h2>Modal Title</h2>
+        <p>This is the modal content.</p>
+       </div>
     </div>
+    </>
   );
-};
+}
 
-export default Modal;
+export default App;
+
 
 
 

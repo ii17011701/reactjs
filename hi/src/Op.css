@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'vivek\'s';
+    src: url('/src//vivek\'s.ttf') format('truetype');
+  }
+
+
+
+.oop {
+   font-family: 'vivek\'s', Arial, sans-serif; 
+}
+
+textarea {
+  font-family: 'vivek\'s', Arial, sans-serif; 
+
+}
